@@ -159,6 +159,7 @@ function registerNewAccount({ email, password, confirmPassword }) {
         }
       })
       .catch((error) => {
+        console.log(error);
         hideLoading();
         alert(
           `Cannot create your account, ${email} might be existed, please try again!`
